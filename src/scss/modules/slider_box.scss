@@ -28,7 +28,7 @@
 .main_block_cover {
   width: 100%;
   height: 100%;
-  position: absolute;
+  //position: absolute;
   background-image: url(../img/galery.jpg);
   -webkit-background-size: cover;
   background-size: cover;
@@ -40,30 +40,36 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: relative;
   z-index: 10;
 }
 
 .picture_monna {
   position: absolute;
-  width: 300px;
-  height: 250px;
+  width: 295px;
+  height: 435px;
   z-index: 100;
   background: red;
-  margin-left: 10px;
+  margin-left: 820px;
+  margin-top: -775px;
+
+  background-image: url(../img/monna.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+
 
   @media screen and (max-width: 1920px) {
     width: 295px;
     height: 435px;
     margin-left: 820px;
-    margin-top: 300px;
+    margin-top: -775px;
   }
 
   @media screen and (max-width: 1440px) {
     width: 221px;
     height: 325px;
     margin-left: 615px;
-    margin-top: 225px;
+    margin-top: -530px;
   }
 }
 
@@ -73,30 +79,76 @@
   position: absolute;
   -webkit-perspective: 300px;
   perspective: 1000px;
+  margin-top: -1080px;
 
-
+  @media screen and (max-width: 1440px) {
+    margin-top: -840px;
+    margin-left: -30px;
+  }
 }
 
 .picture_left {
   width: 201px;
-  height: 377px;
-  background: red;
+  height: 390px;
   z-index: 100;
-  position: relative;
-  //margin-left: 88px;
-  //margin-top: 328px;
-
-
   display: block;
   position: relative;
-  margin: 350px -17px 400px 75px;
-  //-webkit-transform-style: preserve-3d;
-  //-webkit-transform: rotateX(-2deg) rotateY(50deg) rotateZ(2deg) translateX(36px) translateY(4px) translateZ(14px);
-  //
   transform-style: preserve-3d;
+  background-image: url(../img/monna.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  margin: 340px -17px 400px 73px;
   transform: rotateX(3deg) rotateY(50deg) rotateZ(2deg) translateX(36px) translateY(4px) translateZ(14px);
 
-  //transform: perspective(300px) rotate(1deg) rotateY(30deg);
-  //transform:rotate(1deg) rotateY(30deg) ;
+  //margin: 350px -17px 400px 75px;
+  //transform: rotateX(3deg) rotateY(50deg) rotateZ(2deg) translateX(36px) translateY(4px) translateZ(14px);
 
+
+  @media screen and (max-width: 1440px) {
+    width: 183px;
+    height: 295px;
+    margin: 340px -17px 400px 75px;
+    transform: rotateX(4deg) rotateY(57deg) rotateZ(1deg) translateX(29px) translateY(2px) translateZ(3px);
+
+  }
+}
+
+
+//////// Right
+
+.block_picture_right{
+  z-index: 100;
+  position: absolute;
+  -webkit-perspective: 300px;
+  perspective: 1000px;
+  margin-top: -1040px;
+  right: 130px;
+
+  @media screen and (max-width: 1440px) {
+    margin-top: -840px;
+    margin-left: -30px;
+  }
+}
+.picture_right{
+  width: 179px;
+  height: 345px;
+  z-index: 10000;
+  display: block;
+  position: relative;
+  transform-style: preserve-3d;
+  //background-image: url(../img/monna.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background: green;
+
+  margin: 340px -34px 357px 100px;
+  transform: rotateX(6deg) rotateY(-54deg) rotateZ(0deg) translateX(31px) translateY(8px) translateZ(17px);
+
+  @media screen and (max-width: 1440px) {
+    width: 158px;
+    height: 265px;
+    margin: 360px -68px 357px 100px;
+    transform: rotateX(5deg) rotateY(-62deg) rotateZ(0deg) translateX(37px) translateY(8px) translateZ(17px);
+  }
 }
