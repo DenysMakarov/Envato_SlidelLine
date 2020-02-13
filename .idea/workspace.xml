@@ -27,15 +27,22 @@
       <change beforePath="$PROJECT_DIR$/../../MakarovD_Lesson_4/Lesson_4.1/js/main.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MakarovD_Lesson_4/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/galery.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/monna.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lib.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/monna.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/body_section.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/day__1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/day__2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/day__3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/day__4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/day__5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/img_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/img_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/img_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/section_body.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/modules/slider_box.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/modules/slider_box.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,20 +56,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="59" column="91" selection-start-line="59" selection-start-column="91" selection-end-line="59" selection-end-column="91" />
+            <state relative-caret-position="207">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scss/modules/slider_box.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
+            <state relative-caret-position="510">
+              <caret line="371" column="42" selection-start-line="371" selection-start-column="42" selection-end-line="371" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -102,8 +109,8 @@
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/dist/lib.js" />
         <option value="$PROJECT_DIR$/src/js/main.js" />
-        <option value="$PROJECT_DIR$/src/scss/modules/slider_box.scss" />
         <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/scss/modules/slider_box.scss" />
       </list>
     </option>
   </component>
@@ -181,12 +188,12 @@
       <updated>1581497130690</updated>
       <workItem from="1581497134834" duration="2597000" />
       <workItem from="1581502761037" duration="14477000" />
-      <workItem from="1581536827794" duration="11359000" />
+      <workItem from="1581536827794" duration="14214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28433000" />
+    <option name="totallyTimeSpent" value="31288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="837" height="821" extended-state="0" />
@@ -286,17 +293,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/modules/slider_box.scss">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
+    <entry file="file://$PROJECT_DIR$/src/scss/modules/slider_box.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="59" column="91" selection-start-line="59" selection-start-column="91" selection-end-line="59" selection-end-column="91" />
+        <state relative-caret-position="510">
+          <caret line="371" column="42" selection-start-line="371" selection-start-column="42" selection-end-line="371" selection-end-column="42" />
         </state>
       </provider>
     </entry>

@@ -311,7 +311,7 @@
 
 .desc_ms_picture_left_first{
   width: 280px;
-  height: 170px;
+  height: 190px;
   background: rgba(255,255,255,0.1);
   font-size: 25px;
   margin-left: 270px;
@@ -328,6 +328,9 @@
   box-shadow: -10px 18px 28px -7px rgba(56,36,2,1);
 
   //opacity: 1;
+  @media screen and (max-width: 1440px) {
+    margin-top: -100px;
+  }
 
   p{
     font-family: 'Special Elite', cursive;
@@ -338,8 +341,8 @@
   width: 570px;
   height: 250px;
   //background: rgba(255,255,255,0.1);
-  margin-left: -370px;
-  margin-top: -230px;
+  margin-left: -300px;
+  margin-top: -220px;
   padding: 10%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -354,12 +357,20 @@
   p{
     color: #000;
     font-size: 30px;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Montserrat Subrayada', sans-serif;
     text-shadow: 4px 4px 7px rgba(107,46,28,0.67);
     line-height: 40px;
   }
 }
 
+.cenetr_desc_ms{
+  width: 100%;
+  height: 70px;
+  bottom: 0px;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+}
 
 .picture_left {
   width: 201px;
@@ -368,7 +379,6 @@
   display: block;
   position: relative !important;
   transform-style: preserve-3d;
-  //background-image: url(../img/monna_1.jpg);
   -webkit-background-size: cover;
   background-size: cover;
 
