@@ -64,7 +64,7 @@
             this.elClass = elementClass;
             this.mainBox = Array.from(document.getElementsByClassName(this.elClass));
             for (let i = 0; i < this.mainBox.length; i++) {
-                this.mainBox[i].style.position = "relative";
+                // this.mainBox[i].style.position = "absolute";
                 this.mainBox[i].appendChild(LineSlider.createLineSlide())
                 this.mainBox[i].classList.add(this.elClass + i) // => делаем классы для боксов с одинаковыми классами
             }
@@ -158,7 +158,7 @@
                     if (animationOfName == "StepToRight_ms" || animationOfName == "PutToRight_ms" || animationOfName == "CoverToRight_ms") {
                         lastLine = getComputedStyle(firstSlidesLine[firstSlidesLine.length - 1]).animationDelay;
                     } else if (animationOfName == "StepToLeft_ms" || animationOfName == "PutToLeft_ms" || animationOfName == "CoverToLeft_ms") {
-                        let lastLine = getComputedStyle(firstSlidesLine[0]).animationDelay;
+                        lastLine = getComputedStyle(firstSlidesLine[0]).animationDelay;
                     }
 
                     timeOfChange = parseInt(lastLine + 1000) * 1000;
@@ -213,7 +213,7 @@
                             setTimeout(function () {
                                 firstSlidesLine[q].style.animationName = animationOfName;
                                 firstSlidesLine[q].style.backgroundImage = `url(${imgPath[countImageS].dataset.path_img})`;
-                            }, 50);
+                            }, 70);
                         }
 
                         interval = setInterval(function () {
@@ -331,7 +331,7 @@
 }))();
 
 
-// LineSlider.findSlider("box_1")
+// LineSlider.findSlider("box")
 //     .time(3000)
 //     .speed(0.1)
 //     .pagination(true)
@@ -340,15 +340,30 @@
 //     //     .animationName("PutToRight")
 //     .play();
 
-LineSlider.findSlider("your class")
+LineSlider.findSlider("picture_monna")
+    .time(5000)
+    .speed(0.1)
+    // .pagination(true)
+    .animationName("PutToRight")
+    .play();
+
+LineSlider.findSlider("picture_left")
+    .time(5000)
+    .speed(0.1)
+    .animationName("StepToRight")
+    .pagination(true)
+    .play();
+
+LineSlider.findSlider("picture_right")
+    .time(5000)
+    .speed(0.1)
+    .animationName("StepToLeft")
     .pagination(true)
     .play();
 
 
-// // // //
-
 // LineSlider.findSlider("box")
-//     .time(3000)
-//     .speed(0.1)
-//     .animationName("StepToRight")
+//     // .time(3000)
+//     // .speed(0.1)
+//     .animationName("StepToLeft")
 //     .play();
