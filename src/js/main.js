@@ -71,6 +71,7 @@
             return this
         },
 
+        ///////  PLAY SLIDER  ////////////////////////////////////
         play: function () {
 
             let timeDefault;
@@ -78,7 +79,7 @@
             let lastLine;
             let timeOfChange;
             this.animationDirection = animationDirection;
-            let positionBg = 0;
+            let positionBg = -0;
             let countImage = 0;
             let interval;
 
@@ -161,6 +162,7 @@
                         lastLine = getComputedStyle(firstSlidesLine[0]).animationDelay;
                     }
 
+                    ////////  Timing  /////////////////////////////////////
                     timeOfChange = parseInt(lastLine + 1000) * 1000;
                     (timing) ? timeDefault = timing : timeDefault = 1000;
                     console.log("...");
@@ -169,16 +171,16 @@
                     ///////  create BG Position  /////////////////////////
                     for (let q = 0; q < firstSlidesLine.length; q++) {
                         firstSlidesLine[q].style.backgroundPositionX = positionBg + "%";
-                        secondSlidesLine[q].style.backgroundPositionX = positionBg + "%";
-                        positionBg = positionBg + 5.2640;
+                        // secondSlidesLine[q].style.backgroundPositionX = positionBg + "%";
+                        positionBg = positionBg + 5.26;  ///// initially 5.2560
                         firstSlidesLine[q].style.zIndex = "1000";
                     }
-
                     ////////  create FIRST IMG  //////////////////////////
                     for (let q = 0; q < firstSlidesLine.length; q++) {
                         firstSlidesLine[q].style.backgroundImage = `url(${imgPath[countImage].dataset.path_img})`;
                         firstSlidesLine[q].style.animationName = animationOfName;
                         setTimeout(function () {
+                            boxS[0].style.backgroundSize = "100% 100%"
                             boxS[0].style.backgroundImage = `url(${imgPath[countImage].dataset.path_img})`;
                         }, timeOfChange + timeDefault)
                     }
@@ -258,7 +260,7 @@
                                     firstSlidesLine[q].style.opacity = 0;
                                     setTimeout(function () {
                                         firstSlidesLine[q].style.animationName = "none";
-                                    }, 10)
+                                    }, 0)
 
                                     setTimeout(function () {
                                         firstSlidesLine[q].style.animationName = animationOfName;
@@ -315,6 +317,7 @@
                 }
             }
 
+
             playPag(this.mainBox, this.elClass, this.animationOfName);
 
             animationDirection = "PutToRight";
@@ -330,6 +333,16 @@
 
 }))();
 
+let y = 0
+let x = Array.from(document.getElementsByClassName("li"))
+// x[0].style.backgroundImage = `url(../img/post_2.jpg)`;
+for (let i = 0; i < x.length; i++) {
+    x[i].style.backgroundPositionX = y + "%";
+// secondSlidesLine[q].style.backgroundPositionX = positionBg + "%";
+    y = y + 5.26;  ///// initially 5.2560
+    x[i].style.zIndex = "1000";
+}
+
 
 // LineSlider.findSlider("box")
 //     .time(3000)
@@ -340,26 +353,26 @@
 //     //     .animationName("PutToRight")
 //     .play();
 
-LineSlider.findSlider("picture_monna")
+LineSlider.findSlider("box_stamp")
     .time(5000)
     .speed(0.1)
-    // .pagination(true)
+    .pagination(true)
     .animationName("PutToRight")
     .play();
 
-LineSlider.findSlider("picture_left")
-    .time(5000)
+LineSlider.findSlider("picture_monna")
+    .time(2000)
     .speed(0.1)
-    .animationName("StepToRight")
+    .animationName("PutToRight")
     .pagination(true)
     .play();
-
-LineSlider.findSlider("picture_right")
-    .time(5000)
-    .speed(0.1)
-    .animationName("StepToLeft")
-    .pagination(true)
-    .play();
+//
+// LineSlider.findSlider("picture_right")
+//     .time(3000)
+//     .speed(0.1)
+//     .animationName("StepToLeft")
+//     .pagination(true)
+//     .play();
 
 
 // LineSlider.findSlider("box")
