@@ -401,7 +401,7 @@
     width: 187px;
     height: 295px;
     margin: 340px -17px 400px 75px;
-    transform: rotateX(2deg) rotateY(57deg) rotateZ(1deg) translateX(29px) translateY(2px) translateZ(3px);
+    //transform: rotateX(2deg) rotateY(57deg) rotateZ(1deg) translateX(29px) translateY(2px) translateZ(3px);
   }
 
   @media screen and (max-width: 1024px) {
@@ -440,7 +440,7 @@
   z-index: 10000;
   display: block;
   position: relative;
-  //transform-style: preserve-3d;
+  transform-style: preserve-3d;
   //background-image: url(../img/monna_2.jpg);
   -webkit-background-size: cover;
   background-size: cover;

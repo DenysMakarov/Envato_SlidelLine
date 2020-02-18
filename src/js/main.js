@@ -333,16 +333,30 @@
 
 }))();
 
-let y = 0
-let x = Array.from(document.getElementsByClassName("li"))
-// x[0].style.backgroundImage = `url(../img/post_2.jpg)`;
-for (let i = 0; i < x.length; i++) {
-    x[i].style.backgroundPositionX = y + "%";
-// secondSlidesLine[q].style.backgroundPositionX = positionBg + "%";
-    y = y + 5.26;  ///// initially 5.2560
-    x[i].style.zIndex = "1000";
-}
+function check() {
+    let x = Array.from(document.getElementsByClassName("direction_check"))
+    let xx = document.getElementById("direction_check_1")
+    let xxx = document.getElementById("direction_check_2")
+    let y = document.getElementById("xxx");
+    let c = [xx, xxx]
+    c.map((el)=>{
+        el.addEventListener("click", function () {
+            for (let i = 0; i < c.length; i++) {
+                if (c[i].checked == true) {
+                    if (c[i] == xx){
+                        y.style.background = "yellow"
+                    }
+                    else if (c[i] == xxx){
+                        y.style.background = "green"
+                    }
+                }
+            }
+        })
+    })
 
+
+}
+check()
 
 // LineSlider.findSlider("box")
 //     .time(3000)
@@ -353,19 +367,19 @@ for (let i = 0; i < x.length; i++) {
 //     //     .animationName("PutToRight")
 //     .play();
 
-LineSlider.findSlider("box_stamp")
-    .time(5000)
+LineSlider.findSlider("slider_block_cover")
+    .time(3000)
     .speed(0.1)
     .pagination(true)
     .animationName("PutToRight")
     .play();
 
-LineSlider.findSlider("picture_monna")
-    .time(2000)
-    .speed(0.1)
-    .animationName("PutToRight")
-    .pagination(true)
-    .play();
+// LineSlider.findSlider("picture_monna")
+//     .time(2000)
+//     .speed(0.1)
+//     .animationName("PutToRight")
+//     .pagination(true)
+//     .play();
 //
 // LineSlider.findSlider("picture_right")
 //     .time(3000)
