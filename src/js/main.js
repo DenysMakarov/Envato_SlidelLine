@@ -151,9 +151,13 @@
                     let pugBlock = Array.from(document.querySelectorAll('.' + elClass + i + ' > div.pagination_block_ms'))
 
                     if (pagination == false) {
-                        pugBlock.map((el)=>{el.style.display = "none"})
+                        pugBlock.map((el) => {
+                            el.style.display = "none"
+                        })
                     } else if (pagination == true) {
-                        pugBlock.map((el)=>{el.style.display = "block"})
+                        pugBlock.map((el) => {
+                            el.style.display = "block"
+                        })
                     }
 
                     if (animationOfName == "StepToRight_ms" || animationOfName == "PutToRight_ms" || animationOfName == "CoverToRight_ms") {
@@ -172,7 +176,7 @@
                     for (let q = 0; q < firstSlidesLine.length; q++) {
                         firstSlidesLine[q].style.backgroundPositionX = positionBg + "%";
                         // secondSlidesLine[q].style.backgroundPositionX = positionBg + "%";
-                        positionBg = positionBg + 5.26;  ///// initially 5.2560
+                        positionBg = positionBg + 5.262;  ///// initially 5.2560
                         firstSlidesLine[q].style.zIndex = "1000";
                     }
                     ////////  create FIRST IMG  //////////////////////////
@@ -229,7 +233,7 @@
                                 btn[c].classList.add("btn_disable_ms");
                             }
 
-                            if (countImageS < btn.length-1) {
+                            if (countImageS < btn.length - 1) {
                                 btn[countImageS].classList.remove("btn_active_ms");        //// little pug
                                 btn[countImageS + 1].classList.add("btn_active_ms");
                             }
@@ -287,12 +291,12 @@
                                 btn[c].classList.remove("btn_active_ms");
                                 btn[c].classList.add("btn_enable_ms");
                             }
-                            if (btn[countImageS].dataset.pugnumber == countImageS){
+                            if (btn[countImageS].dataset.pugnumber == countImageS) {
                                 btn[countImageS].classList.add("btn_active_ms");
                             }
                         }, timeOfChange + 500);  //// +700 ???
                         startPlay(countImageS)
-            };
+                    };
 
                     btn.map((el) => {
                         el.addEventListener("click", function (e) {
@@ -333,21 +337,49 @@
 
 }))();
 
+
 function check() {
-    let x = Array.from(document.getElementsByClassName("direction_check"))
-    let xx = document.getElementById("direction_check_1")
-    let xxx = document.getElementById("direction_check_2")
-    let y = document.getElementById("xxx");
-    let c = [xx, xxx]
-    c.map((el)=>{
+    let play = document.getElementById("play")
+    // let labelOfDirection = Array.from(document.getElementsByClassName("direction_check"))
+    let directCheckedFirst = document.getElementById("direction_check_1")
+    let directCheckedSecond = document.getElementById("direction_check_2")
+    let directCheckedArray = [directCheckedFirst, directCheckedSecond];
+
+    let animateCheckedFirst = document.getElementById("animation_check_1")
+    let animateCheckedSecond = document.getElementById("animation_check_2")
+    let animateCheckedArrey = [animateCheckedFirst, animateCheckedSecond];
+
+    let speedValue = document.getElementById("speed")
+    let timeValue = document.getElementById("time")
+
+    let pagOff = document.getElementById("pagination_check")
+
+
+    let direct = 0;
+    let animation = 0;
+    let pagCheck = true;
+
+    directCheckedArray.map((el) => {
         el.addEventListener("click", function () {
-            for (let i = 0; i < c.length; i++) {
-                if (c[i].checked == true) {
-                    if (c[i] == xx){
-                        y.style.background = "yellow"
+            for (let i = 0; i < directCheckedArray.length; i++) {
+                if (directCheckedArray[i].checked == true) {
+                    if (directCheckedArray[i] == directCheckedFirst) {
+                        direct = 0
+                    } else if (directCheckedArray[i] == directCheckedSecond) {
+                        direct = 1
                     }
-                    else if (c[i] == xxx){
-                        y.style.background = "green"
+                }
+            }
+        })
+    })
+    animateCheckedArrey.map((el) => {
+        el.addEventListener("click", function () {
+            for (let i = 0; i < animateCheckedArrey.length; i++) {
+                if (animateCheckedArrey[i].checked == true) {
+                    if (animateCheckedArrey[i] == animateCheckedFirst) {
+                        animation = 0
+                    } else if (animateCheckedArrey[i] == animateCheckedSecond) {
+                        animation = 1
                     }
                 }
             }
@@ -355,7 +387,60 @@ function check() {
     })
 
 
+    let mainBlock = document.getElementById("main_block")
+    let optionBlock = document.getElementById("option_block")
+    let sliderBlock = document.getElementById("slider_block")
+    let t_copy = sliderBlock.cloneNode(true);
+
+
+    function createOptions(direct, animation, speed, time, pagCheck) {
+        let dir;
+        let speedV;
+        let timeV;
+        let pagCheced;
+        (direct == 0 && animation == 0) ? dir = "PutToRight" : "PutToRight";
+        (direct == 0 && animation == 1) ? dir = "StepToRight" : "PutToRight";
+        (direct == 1 && animation == 0) ? dir = "PutToLeft" : "PutToRight";
+        (direct == 1 && animation == 1) ? dir = "StepToLeft" : "PutToRight";
+
+        (speed.value) ? speedV = +speed.value : speedV = 0.1;
+        (time.value) ? timeV = +time.value : timeV = 2000;
+        (pagCheck.checked == true) ? pagCheced = false : pagCheced = true;
+        
+        LineSlider.findSlider("slider_block_cover")
+            .time(timeV)
+            .speed(speedV)
+            .pagination(pagCheced)
+            .animationName(dir)
+            .play();
+    }
+
+    pagOff.addEventListener("click", function () {
+        console.log(pagOff.checked)
+    })
+
+    // fun(direct)
+    play.addEventListener("click", function () {
+        play.style.animationName = ""
+        setTimeout(function () {
+            play.style.animationName = "play_button"
+        }, 100)
+
+        let sliderWrapper = Array.from(document.getElementsByClassName("slider_wrapper_ms "))
+        let pagBlock = Array.from(document.getElementsByClassName("pagination_block_ms "))
+        mainBlock = document.getElementById("main_block")
+        sliderBlock = document.getElementById("slider_block")
+        sliderBlock.parentNode.removeChild(sliderBlock)
+        mainBlock.appendChild(t_copy)
+
+        sliderWrapper[0].parentNode.removeChild(sliderWrapper[0])
+        pagBlock[0].parentNode.removeChild(pagBlock[0])
+
+        createOptions(direct, animation, speedValue, timeValue, pagOff)
+
+    })
 }
+
 check()
 
 // LineSlider.findSlider("box")
@@ -373,6 +458,13 @@ LineSlider.findSlider("slider_block_cover")
     .pagination(true)
     .animationName("PutToRight")
     .play();
+
+// LineSlider.findSlider("slider_block_cover_2")
+//     .time(3000)
+//     .speed(0.1)
+//     .pagination(true)
+//     .animationName("PutToLeft")
+//     .play();
 
 // LineSlider.findSlider("picture_monna")
 //     .time(2000)
