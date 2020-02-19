@@ -62,7 +62,7 @@ html {
 
 .option_block {
   position: absolute;
-  top: 13%;
+  top: 10.5%;
   width: 17%;
   height: 65%;
 
@@ -272,6 +272,8 @@ html {
     margin-top: -3rem !important;
     font-size: 21px;
     color: rgb(84, 49, 0);
+    box-sizing: border-box;
+    padding: 5px;
   }
 }
 

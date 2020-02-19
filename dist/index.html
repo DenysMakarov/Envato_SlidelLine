@@ -4,61 +4,84 @@
     <meta charset="UTF-8">
     <title>Template</title>
     <!--<link rel="stylesheet" href="css/app.css">-->
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
 <link href="app.css" rel="stylesheet"></head>
 <body>
 
 
 <header class="header">
-    <div class="main_block_cover">
-        <div class="main_block"></div>
 
-        <div class="picture_monna">
-            <div class="background_ms" data-path_img="img/monna_1.jpg">
-                <div class="desc_ms"></div>
-            </div>
-            <div class="background_ms" data-path_img="img/monna_2.jpg">
-                <div class="desc_ms"></div>
-            </div>
+    <div class="main_block" id="main_block">
+
+        <div class="option_block" id="option_block">
+            <form action="" class="form_1">
+                <p class="p_form_1">DIRECTION:</p>
+                <input id="direction_check_1" type="radio" name="option1" checked>
+                <input id="direction_check_2" type="radio" name="option1">
+                <label class="direction_check direction_check_1" for="direction_check_1"><p></p></label>
+                <label class="direction_check direction_check_2" for="direction_check_2"><p></p></label>
+                <!--<div id="xxx"></div>-->
+
+                <p class="p_form_1">ANIMATION:</p>
+                <input id="animation_check_1" type="radio" name="option2" checked>
+                <input id="animation_check_2" type="radio" name="option2">
+                <label class="animation_check animation_check_1" for="animation_check_1"><p></p></label>
+                <label class="animation_check animation_check_2" for="animation_check_2"><p></p></label>
+
+                <div class="play" id="play">
+                    <p class="play_text">PLAY</p>
+                </div>
+            </form>
         </div>
 
-        <div class="block_picture_left">
-            <div class="picture_left">
-                <div class="background_ms" data-path_img="img/monna_2.jpg">
-                    <div class="cover_first_picture"></div>
-                    <div class="desc_ms ">
-                        <!--<p>YOU CAN USE EACH SLIDER'S DESCRIPTION EVERYWHERE AND AS YOU WANT</p>-->
-                    </div>
-                </div>
-                <div class="background_ms" data-path_img="img/monna_1.jpg">
-                    <div class="desc_ms ">
-                        <!--<p>YOU CAN TURN PAGINATION ON OR TURN IT OFF IF YOU WANT</p>-->
-                    </div>
-                </div>
-            </div>
+        <div class="option_block_second" id="option_block_second">
+            <form class="form_2">
+                <p class="speed">SPEED:</p>
+                <input type="text" id="speed" placeholder="0.1 - ...">
+
+                <p class="time">TIME:</p>
+                <input type="text" id="time" placeholder="1000 - ....">
+
+                <p class="pagination_check_text">PAGINATION:</p>
+                <input type="checkbox" id="pagination_check">
+                <label class="pagination_check " for="pagination_check">
+                    <p class="on on_1">O</p><p class="on on_2">N</p><br>
+                    <p class="off off_1">O</p>
+                    <p class="off off_2">F</p>
+                    <p class="off off_3">F</p>
+                </label>
+
+            </form>
         </div>
 
-        <div class="block_picture_right">
-            <div class="picture_right">
-                <div class="background_ms" data-path_img="img/monna_2.jpg">
-                    <div class="desc_ms desc_ms_picture_right_first">
-                        <p>YOU CAN USE EACH SLIDER'S DESCRIPTION EVERYWHERE AND AS YOU WANT</p>
+
+        <div class="slider_block" id="slider_block">
+            <div class="slider_block_cover" id="slider_block_cover">
+                <div class="background_ms" data-path_img="img/day__1.jpg">
+                    <div class="desc_ms cenetr_desc_ms">
+
                     </div>
                 </div>
-                <div class="background_ms" data-path_img="img/monna_1.jpg">
-                    <div class="desc_ms desc_ms_picture_right_first">
-                        <p>YOU CAN TURN PAGINATION ON OR TURN IT OFF IF YOU WANT</p>
+                <div class="background_ms" data-path_img="img/day__2.jpg">
+                    <div class="desc_ms cenetr_desc_ms">
+
                     </div>
                 </div>
-                <div class="background_ms" data-path_img="img/monna_2.jpg">
-                    <div class="desc_ms desc_ms_picture_right_first">
-                        <p>IF YOU WANT YOU CAN CHANGE DIRECTION OF ANIMATION (LEFT OR RIGHT)</p>
+                <div class="background_ms" data-path_img="img/day__3.jpg">
+                    <div class="desc_ms cenetr_desc_ms">
+
                     </div>
                 </div>
-                <div class="background_ms" data-path_img="img/monna_1.jpg">
-                    <div class="desc_ms desc_ms_picture_right_first">
-                        <p>WE HOPE YOU TO ENJOY OUR SLIDER AND WILL LOOKING FORWARD OF OUR NEW WORKS</p>
+                <div class="background_ms" data-path_img="img/day__4.jpg">
+                    <div class="desc_ms cenetr_desc_ms">
+
+                    </div>
+                </div>
+                <div class="background_ms" data-path_img="img/day__5.jpg">
+                    <div class="desc_ms cenetr_desc_ms">
+
                     </div>
                 </div>
             </div>
@@ -66,12 +89,30 @@
 
     </div>
 </header>
-<!--<div class="section_body">-->
-    <!--<div class="section_body_cover"></div>-->
-<!--</div>-->
-<!--<div class="footer">-->
-    <!--<div class="section_footer_cover"></div>-->
-<!--</div>-->
+
+
+<div class="stamp">
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li z"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+    <div class="li"></div>
+</div>
 
 
 <script type="text/javascript" src="lib.js"></script></body>
