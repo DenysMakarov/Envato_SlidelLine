@@ -25,7 +25,7 @@
     };
 
 /////////  SLIDER OBJECT /////////////////////////////////
-    const LineSlider = {
+    const sl = {
         /////////  CREATE SLIDER INSIDE YOUR CLASS  //////
         createLineSlide: function () {
 
@@ -65,14 +65,14 @@
             this.mainBox = Array.from(document.getElementsByClassName(this.elClass));
             for (let i = 0; i < this.mainBox.length; i++) {
                 // this.mainBox[i].style.position = "absolute";
-                this.mainBox[i].appendChild(LineSlider.createLineSlide())
+                this.mainBox[i].appendChild(sl.createLineSlide())
                 this.mainBox[i].classList.add(this.elClass + i) // => делаем классы для боксов с одинаковыми классами
             }
             return this
         },
 
         ///////  PLAY SLIDER  ////////////////////////////////////
-        play: function () {
+        an: function () {
 
             let timeDefault;
             let timing = time;
@@ -332,8 +332,8 @@
         }
     };
 
-    window.LineSlider = LineSlider;
-    return window.LineSlider
+    window.xn = sl;
+    return window.xn
 
 }))();
 
@@ -406,13 +406,13 @@ function check() {
         (speed.value) ? speedV = +speed.value : speedV = 0.1;
         (time.value) ? timeV = +time.value : timeV = 2000;
         (pagCheck.checked == true) ? pagCheced = false : pagCheced = true;
-        
-        LineSlider.findSlider("slider_block_cover")
+
+        xn.findSlider("slider_block_cover")
             .time(timeV)
             .speed(speedV)
             .pagination(pagCheced)
             .animationName(dir)
-            .play();
+            .an();
     }
 
     pagOff.addEventListener("click", function () {
@@ -430,6 +430,12 @@ function check() {
         let pagBlock = Array.from(document.getElementsByClassName("pagination_block_ms "))
         mainBlock = document.getElementById("main_block")
         sliderBlock = document.getElementById("slider_block")
+        bg = Array.from(document.getElementsByClassName("p"))
+
+        // bg.forEach((el)=>{
+        //     el.style.opacity = "0"
+        // })
+
         sliderBlock.parentNode.removeChild(sliderBlock)
         mainBlock.appendChild(t_copy)
 
@@ -437,6 +443,9 @@ function check() {
         pagBlock[0].parentNode.removeChild(pagBlock[0])
 
         createOptions(direct, animation, speedValue, timeValue, pagOff)
+        for (let i = 0; i < bg.length; i++) {
+            // if(+bg[i].dataset.n == i){bg[i].style.opacity = "1"}
+        }
 
     })
 }
@@ -452,12 +461,12 @@ check()
 //     //     .animationName("PutToRight")
 //     .play();
 
-LineSlider.findSlider("slider_block_cover")
+xn.findSlider("slider_block_cover")
     .time(3000)
     .speed(0.1)
     .pagination(true)
     .animationName("PutToRight")
-    .play();
+    .an();
 
 // LineSlider.findSlider("slider_block_cover_2")
 //     .time(3000)

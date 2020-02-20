@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d3178c-0617-496f-ae3d-1b250d204e47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Slider/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Slider/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Slider/src/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Slider/src/js/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Slider/src/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Slider/src/scss/modules/keyframes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Slider/src/scss/modules/slider_box.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Template/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Template/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ToyStore_2/.idea/vcs.xml" afterDir="false" />
@@ -27,13 +20,18 @@
       <change beforePath="$PROJECT_DIR$/../../MakarovD_Lesson_4/Lesson_4.1/js/main.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MakarovD_Lesson_4/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/day__5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/day__5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/galery.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/monna_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/monna_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/day__5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/day__5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/Post_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/post_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/post_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/post_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/post_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/post_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/post_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/post_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/post_9.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/modules/third_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/modules/third_path.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -47,23 +45,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
-              <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="446">
+              <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/modules/third_path.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="402" column="20" selection-start-line="402" selection-start-column="20" selection-end-line="402" selection-end-column="20" />
+            <state relative-caret-position="534">
+              <caret line="423" column="18" selection-start-line="423" selection-start-column="18" selection-end-line="423" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -71,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="408" column="8" selection-start-line="408" selection-start-column="8" selection-end-line="408" selection-end-column="8" />
+            <state relative-caret-position="371">
+              <caret line="437" lean-forward="true" selection-start-line="437" selection-end-line="437" />
             </state>
           </provider>
         </entry>
@@ -90,11 +85,12 @@
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/dist/lib.js" />
         <option value="$PROJECT_DIR$/src/scss/modules/keyframes.scss" />
+        <option value="$PROJECT_DIR$/../MSLine/index.html" />
         <option value="$PROJECT_DIR$/src/scss/main.scss" />
-        <option value="$PROJECT_DIR$/src/js/main.js" />
         <option value="$PROJECT_DIR$/src/scss/modules/slider_box.scss" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/scss/modules/third_path.scss" />
+        <option value="$PROJECT_DIR$/src/js/main.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
       </list>
     </option>
   </component>
@@ -120,6 +116,12 @@
               <item name="SliderLine" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SliderLine" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="img" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="SliderLine" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -189,12 +191,13 @@
       <updated>1581497130690</updated>
       <workItem from="1581497134834" duration="2597000" />
       <workItem from="1581502761037" duration="14477000" />
-      <workItem from="1581536827794" duration="79862000" />
+      <workItem from="1581536827794" duration="80899000" />
+      <workItem from="1582217541299" duration="4976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96936000" />
+    <option name="totallyTimeSpent" value="102949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="837" height="821" extended-state="0" />
@@ -290,42 +293,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/appS.css" />
-    <entry file="file://$PROJECT_DIR$/src/img/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/latter.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/important.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/galery_3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/galery_2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/galery.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/footer_section.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/monna_2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/monna_1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/left_picture_second.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/left_picture_first.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/1.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/img/4.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/img/latter.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/img/important.png" />
+    <entry file="file://$PROJECT_DIR$/src/img/galery_3.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/img/galery_2.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/img/galery.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/img/footer_section.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/img/monna_2.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/img/monna_1.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/img/left_picture_second.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/img/left_picture_first.jpg" />
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -340,13 +319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-52">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -376,34 +348,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/modules/slider_box.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4876">
-          <caret line="212" selection-start-line="212" selection-end-line="213" selection-end-column="3" />
+        <state relative-caret-position="350">
+          <caret line="242" lean-forward="true" selection-start-line="242" selection-end-line="242" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MSLine/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="69" column="50" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="408" column="8" selection-start-line="408" selection-start-column="8" selection-end-line="408" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="371">
+          <caret line="437" lean-forward="true" selection-start-line="437" selection-end-line="437" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/modules/third_path.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="402" column="20" selection-start-line="402" selection-start-column="20" selection-end-line="402" selection-end-column="20" />
+        <state relative-caret-position="534">
+          <caret line="423" column="18" selection-start-line="423" selection-start-column="18" selection-end-line="423" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
         </state>
       </provider>
     </entry>
